@@ -19,13 +19,12 @@ def main( room ): # room - номер комнаты, которую ищем
 
         for i in range(0, side):
             floor += 1
-            order = 0
 
             if cur_room + side < room:
                 cur_room += side
                 continue
 
-            order += room - cur_room
+            order = room - cur_room
 
             return floor, order
 
